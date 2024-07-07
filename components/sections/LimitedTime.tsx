@@ -9,7 +9,7 @@ const LimitedTime = () => {
             Limited time <br /> Free Access
           </h1>
           <p className="text-md md:text-xl text-center md:text-left mt-2">
-            Sign-Up for Free Access!
+            Sign-Up today!
           </p>
         </div>
         <div className="w-full md:w-[70%] lg:w-1/2 mt-8">

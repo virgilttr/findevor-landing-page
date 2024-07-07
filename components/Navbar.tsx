@@ -9,7 +9,7 @@ import { onGotoElement } from "@/lib/utils";
 
 const menus = [
   { title: "Benefits", href: "benefits" },
-  { title: "Pricing", href: "pricing" },
+  { title: "Contact", href: "contact" },
   { title: "FAQ", href: "faq" },
 ];
 
@@ -20,14 +20,20 @@ const Navbar = () => {
     <div className="fixed z-10 bg-[#09090B]/20 backdrop-blur w-full">
       {isDesktop ? (
         <div className="container pt-4 pb-2 flex justify-between items-center">
-          <Image
-            className="hidden lg:block cursor-pointer"
-            src="/logo.png"
-            alt="Findover Logo"
-            width={100}
-            height={95}
-            onClick={() => onGotoElement("hero")}
-          />
+          <div className="relative inline-block">
+            <div
+              className="absolute inset-0 bg-white rounded-full"
+              style={{ transform: "scale(1.02)" }}
+            ></div>
+            <Image
+              className="hidden lg:block cursor-pointer relative"
+              src="/logo.png"
+              alt="Findevor Logo"
+              width={100}
+              height={95}
+              onClick={() => onGotoElement("hero")}
+            />
+          </div>{" "}
           <nav className="hidden lg:block">
             <div className="flex justify-center space-x-2 items-center">
               {menus.map((item, idx) => (
@@ -55,7 +61,7 @@ const Navbar = () => {
           <Image
             className="lg:hidden block cursor-pointer"
             src="/logo.png"
-            alt="Findover Logo"
+            alt="Findevor Logo"
             width={80}
             height={75}
             onClick={() => onGotoElement("hero")}

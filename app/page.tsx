@@ -17,10 +17,10 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <Download />
+      {/*       <Download />
+       */}{" "}
       <LimitedTime />
       <Benefits />
-
       {/* Call to action */}
       <div className="bg-[#3C65FB] w-full py-14 lg:py-18 flex items-center">
         <div className="container flex flex-col items-center justify-center">
@@ -38,14 +38,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* video */}
       <div className="bg-black py-16 w-full">
         <div className="container flex items-center justify-center">
           <YouTubeEmbed videoid="6OBgKtayz2M" width={720} />
         </div>
       </div>
-
       <Pricing />
       <Faq />
       <Footer />
