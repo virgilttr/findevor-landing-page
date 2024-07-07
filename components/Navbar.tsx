@@ -9,7 +9,7 @@ import { onGotoElement } from "@/lib/utils";
 
 const menus = [
   { title: "Benefits", href: "benefits" },
-  { title: "Contact", href: "contact" },
+  { title: "Contact", href: "pricing" },
   { title: "FAQ", href: "faq" },
 ];
 
